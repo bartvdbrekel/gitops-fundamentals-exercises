@@ -1,0 +1,16 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: flux-fundamentals
+  namespace: fysicon-bartb
+spec:
+  gitImplementation: go-git
+  interval: 10m0s
+  ref:
+    branch: main
+  secretRef:
+    name: flux-fundamentals
+  timeout: 1m0s
+  url: https://github.com/bartvdbrekel/gitops-fundamentals-exercises.git
+
