@@ -2,6 +2,9 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
+  labels:
+    kustomize.toolkit.fluxcd.io/name: cluster
+    kustomize.toolkit.fluxcd.io/namespace: fysicon-bartb
   name: cluster
   namespace: fysicon-bartb
 spec:
