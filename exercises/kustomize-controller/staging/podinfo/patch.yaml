@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: podinfo
 spec:
-  replicas: 5
+  replicas: 3
   topologySpreadConstraints:
     - maxSkew: 1
       topologyKey: topology.kubernetes.io/zone
