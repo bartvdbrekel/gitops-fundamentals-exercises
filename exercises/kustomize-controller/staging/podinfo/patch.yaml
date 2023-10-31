@@ -4,11 +4,11 @@ kind: Deployment
 metadata:
   name: podinfo
 spec:
-  replicas: 3
+  replicas: 5
   template:
     spec:
       containers:
         - name: podinfod
           env:
             - name: PODINFO_UI_COLOR
-              value: "#0891ed"
+              value: "#420D09"
